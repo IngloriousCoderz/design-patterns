@@ -1,4 +1,4 @@
-package ic.designpatterns.mvc.decorator;
+package ic.designpatterns.mvc.observer.decorator;
 
 import ic.designpatterns.mvc.Model;
 

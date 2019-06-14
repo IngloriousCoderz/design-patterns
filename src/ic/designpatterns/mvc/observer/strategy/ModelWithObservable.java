@@ -1,8 +1,8 @@
-package ic.designpatterns.mvc.strategy;
+package ic.designpatterns.mvc.observer.strategy;
 
 import ic.designpatterns.mvc.Model;
-import ic.designpatterns.mvc.Observable;
-import ic.designpatterns.mvc.Observer;
+import ic.designpatterns.mvc.observer.Observable;
+import ic.designpatterns.mvc.observer.Observer;
 
 public class ModelWithObservable implements Model {
 	private String attribute;

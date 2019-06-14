@@ -1,4 +1,4 @@
-package ic.designpatterns.mvc;
+package ic.designpatterns.mvc.observer;
 
 import java.util.ArrayList;
 import java.util.Collection;

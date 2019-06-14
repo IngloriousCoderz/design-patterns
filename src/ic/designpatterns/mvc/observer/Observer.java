@@ -1,4 +1,4 @@
-package ic.designpatterns.mvc;
+package ic.designpatterns.mvc.observer;
 
 public interface Observer {
 	public void wakeUp(String variable);

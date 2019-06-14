@@ -1,5 +1,7 @@
 package ic.designpatterns.mvc;
 
+import ic.designpatterns.mvc.observer.Observer;
+
 public class View implements Observer {
 	private final String TEMPLATE;
 

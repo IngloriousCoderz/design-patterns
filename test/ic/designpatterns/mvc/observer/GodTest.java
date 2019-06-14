@@ -4,17 +4,15 @@ import org.junit.Test;
 
 import ic.designpatterns.mvc.Model;
 import ic.designpatterns.mvc.View;
-import ic.designpatterns.mvc.observer.decorator.BaseModel;
-import ic.designpatterns.mvc.observer.decorator.ObservableDecorator;
+import ic.designpatterns.mvc.observer.god.GodModel;
 
-public class DecoratorTest {
+public class GodTest {
 
     @Test
     public void shouldObserveChanges() {
         // given
-        Model decorated = new BaseModel();
-        Observable observable = new ObservableDecorator(decorated);
-
+        GodModel observable = new GodModel();
+        
         Observer observer = new View();
         observable.addObserver(observer);
 

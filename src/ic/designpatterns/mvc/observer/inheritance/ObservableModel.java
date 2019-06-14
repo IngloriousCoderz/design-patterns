@@ -1,7 +1,7 @@
-package ic.designpatterns.mvc.inheritance;
+package ic.designpatterns.mvc.observer.inheritance;
 
 import ic.designpatterns.mvc.Model;
-import ic.designpatterns.mvc.Observable;
+import ic.designpatterns.mvc.observer.Observable;
 
 public class ObservableModel extends Observable implements Model {
 	private String attribute;

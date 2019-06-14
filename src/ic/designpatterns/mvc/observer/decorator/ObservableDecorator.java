@@ -1,7 +1,7 @@
-package ic.designpatterns.mvc.decorator;
+package ic.designpatterns.mvc.observer.decorator;
 
 import ic.designpatterns.mvc.Model;
-import ic.designpatterns.mvc.Observable;
+import ic.designpatterns.mvc.observer.Observable;
 
 public class ObservableDecorator extends Observable implements Model {
 	private Model decorated;

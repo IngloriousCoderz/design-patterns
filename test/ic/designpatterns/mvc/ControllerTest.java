@@ -1,9 +1,12 @@
 package ic.designpatterns.mvc;
 
-import ic.designpatterns.mvc.decorator.ObservableDecorator;
-import ic.designpatterns.mvc.decorator.BaseModel;
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
+
+import ic.designpatterns.mvc.observer.Observable;
+import ic.designpatterns.mvc.observer.decorator.BaseModel;
+import ic.designpatterns.mvc.observer.decorator.ObservableDecorator;
 
 public class ControllerTest {
 	@Test
@@ -28,9 +31,10 @@ public class ControllerTest {
 	@Test
 	public void shouldUpdateViewAutomatically() {
 		// given
+		// Model model = new GodModel();
 		// Model model = new ObservableModel();
 		// Model model = new ModelWithObservable();
-		Model model = new BaseModel();
+		Model model = new BaseModel();	
 		model = new ObservableDecorator(model);
 
 		View view = new View();
