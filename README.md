@@ -1,6 +1,6 @@
 # design-patterns
 
-A NetBeans project used as a benchmark for a bootcamp on design patterns.
+An Eclipse project used as reference code for a bootcamp on Design Patterns.
 
 There are two examples here:
 
