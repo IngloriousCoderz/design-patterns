@@ -23,7 +23,7 @@ public class DecoratorMarioTest {
 	}
 
 	@Test
-	public void testFireballMario() {
+	public void testFireMario() {
 		Mario mario = new BaseMario();
 		mario = new SuperDecorator(mario);
 		mario = new FireDecorator(mario);
@@ -32,11 +32,21 @@ public class DecoratorMarioTest {
 	}
 
 	@Test
-	public void testFlyingSquirrelMario() {
+	public void testCapeMario() {
 		Mario mario = new BaseMario();
 		mario = new SuperDecorator(mario);
 		mario = new CapeDecorator(mario);
 
 		MarioTestHelper.testCapeMario(mario);
+	}
+	
+	@Test
+	public void testFireCapeMario() {
+		Mario mario = new BaseMario();
+		mario = new SuperDecorator(mario);
+		mario = new CapeDecorator(mario);
+		mario = new FireDecorator(mario);
+
+		MarioTestHelper.testFireCapeMario(mario);
 	}
 }

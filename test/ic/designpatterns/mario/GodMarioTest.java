@@ -21,14 +21,14 @@ public class GodMarioTest {
 	}
 
 	@Test
-	public void testFireballMario() {
+	public void testFireMario() {
 		Mario mario = new GodMario(Type.FIRE);
 
 		MarioTestHelper.testFireMario(mario);
 	}
 
 	@Test
-	public void testFlyingSquirrelMario() {
+	public void testCapeMario() {
 		Mario mario = new GodMario(Type.CAPE);
 
 		MarioTestHelper.testCapeMario(mario);

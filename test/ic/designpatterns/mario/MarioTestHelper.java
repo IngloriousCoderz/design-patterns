@@ -38,4 +38,13 @@ class MarioTestHelper {
 		assertEquals("Gliding", mario.onKeyPressed(KeyCode.JUMP));
 		assertEquals("Running", mario.onKeyPressed(KeyCode.ACTION));
 	}
+	
+	static void testFireCapeMario(Mario mario) {
+		assertEquals("Moving left", mario.onKeyPressed(KeyCode.LEFT));
+		assertEquals("Moving right", mario.onKeyPressed(KeyCode.RIGHT));
+		assertEquals("", mario.onKeyPressed(KeyCode.UP));
+		assertEquals("Crashing", mario.onKeyPressed(KeyCode.DOWN));
+		assertEquals("Gliding", mario.onKeyPressed(KeyCode.JUMP));
+		assertEquals("Shooting", mario.onKeyPressed(KeyCode.ACTION));
+	}
 }
